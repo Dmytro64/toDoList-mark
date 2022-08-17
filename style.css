@@ -1,0 +1,255 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/*
+               main style
+            */
+
+html,
+body {
+   margin: 0;
+   height: 100%;
+   background-color: cadetblue;
+   font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+   text-align: center;
+}
+
+.flex-wrapper {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.add-todo-wrapper {
+   display: flex;
+   width: 500px;
+   min-height: 40px;
+   align-items: center;
+   background-color: darkgoldenrod;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.input-wrapper {
+   width: 80%;
+}
+
+.input-wrapper input {
+   width: 100%;
+   height: 25px;
+   outline: none;
+   border: none;
+}
+
+.button-wrapper {
+   width: 20%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.button-wrapper button {
+   width: 80%;
+   background-color: springgreen;
+   color: #fff;
+   outline: none;
+   border: none;
+   height: 25px;
+   cursor: pointer;
+   
+}
+
+.todo-item {
+   display: flex;
+   width: 500px;
+   min-height: 50px;
+   border: 1px solid black;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   padding: 10px;
+   background-color: orange;
+}
+
+.todo-item.checked {
+   background-color: darkgray;
+   opacity: 0.5;
+}
+
+.todo-item.delition {
+   animation: opacity 1s ease-in-out;
+}
+
+.description {
+   width: 80%;
+   display: flex;
+   align-items: center;
+   color: floralwhite;
+}
+
+.buttons {
+   width: 20%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.buttons input {
+   width: 25px;
+   height: 25px;
+   cursor: pointer;
+}
+
+.buttons button {
+   outline: none;
+   border: none;
+   background-color: crimson;
+   color: #fff;
+   cursor: pointer;
+   height: 25px;
+   border-radius: 5px;
+}
+
+@keyframes opacity {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+
+.todos-wrapper {}
