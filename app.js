@@ -33,7 +33,6 @@ const filterTasks = () => {
 const fillHtmlList = () => {
    todosWrapper.innerHTML = "";
    if (tasks.length > 0) {
-
       tasks.forEach((item, index) => {
          todosWrapper.innerHTML += createTemplate(item, index);
       });
